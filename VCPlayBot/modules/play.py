@@ -8,6 +8,7 @@ import aiohttp
 import ffmpeg
 import requests
 import wget
+import yt_dlp
 from PIL import Image, ImageDraw, ImageFont
 from pyrogram import Client, filters
 from pyrogram.types import Voice
