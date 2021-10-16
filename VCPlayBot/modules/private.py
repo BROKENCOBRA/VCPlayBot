@@ -14,15 +14,15 @@ def _start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                        "➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ 🙋‍♀️", url=f"https://t.me/Innocent_Bacha_Bot?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "📲 Updates", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        "📲 Gʀᴏᴜᴘ", url=f"https://t.me/cchour"), 
                     InlineKeyboardButton(
-                        "💬 Support", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "💬 Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/shivamdemon")
                 ],[
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
+                        "❤️ Oᴡɴᴇʀ", url=f"https://t.me/imnikkkk")
                 ]
             ]
         ),
@@ -32,12 +32,12 @@ def _start(client, message):
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
-        f"""**🔴 {PROJECT_NAME} is online**""",
+        f"""**🔴 Cʀᴀᴢʀ Cʀᴇᴡ ᴍᴜsɪᴄ is online**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💬 Support Chat", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "💬 Aɴʏ Pʀᴏʙʟᴇᴍ", url=f"https://t.me/imnikkkk"
                     )
                 ]
             ]
@@ -75,12 +75,12 @@ def map(pos):
             [InlineKeyboardButton(text = '▶️', callback_data = "help+2")]
         ]
     elif(pos==len(tr.HELP_MSG)-1):
-        url = f"https://t.me/{SUPPORT_GROUP}"
+        url = f"https://t.me/Shivamdemon"
         button = [
-            [InlineKeyboardButton("➕ Add me to your Group 🙋‍♀️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '📲 Updates', url=f"https://t.me/{UPDATES_CHANNEL}"),
-             InlineKeyboardButton(text = '💬 Support', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = '🛠 Source Code 🛠', url=f"https://{SOURCE_CODE}")],
+            [InlineKeyboardButton("➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ🙋‍♀️", url=f"https://t.me/Innocent_Bacha_Bot?startgroup=true")],
+            [InlineKeyboardButton(text = '📲 Gʀᴏᴜᴘ', url=f"https://t.me/cchour"),
+             InlineKeyboardButton(text = '💬 Sᴜᴘᴘᴏʀᴛ', url=f"https://t.me/shivamdemon")],
+            [InlineKeyboardButton(text = '❤️Oᴡɴᴇʀ', url=f"https://t.me/imnikkkk)],
             [InlineKeyboardButton(text = '◀️', callback_data = f"help+{pos-1}")]
         ]
     else:
@@ -100,7 +100,7 @@ async def ghelp(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🟡 Click here for help 🟡", url=f"https://t.me/{BOT_USERNAME}?start"
+                        "🟡 Click here for help 🟡", url=f"https://t.me/Innocent_Bacha_Bot?start"
                     )
                 ]
             ]
